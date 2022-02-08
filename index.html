@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="hambruger.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <ul id="menu">
-            <li><a class="menuItem" href="#"></a>Média</li>
-            <li><a class="menuItem" href="#"></a>Média</li>
-            <li><a class="menuItem" href="#"></a>Média</li>
-            <li><a class="menuItem" href="#"></a>Média</li>
-        </ul>
-        <button id="hamburger">
-            <i class="menuEscolhas">menu</i>
-            <i class="menuFechar">fechar</i>
-        </button>
-    </header>
-    
+    <div class="container">
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./exercicos/media.php" class="nav-link">Média</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Calculadora</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tabuada</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Pares e Ímpares</a>
+                </li>    
+            </ul>
+        </nav>
+    </div>
     
 </body>
 </html>
