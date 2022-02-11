@@ -7,6 +7,7 @@
  * Versão: 1.0
  **************************************************************************************/
 
+//funções projeto media
 function calcularMedia ($valor1, $valor2, $valor3, $valor4) {
     
     //Declaração de variaveis locais da função (todas as variaveis recebem os dados do argumento da function)
@@ -25,6 +26,62 @@ function calcularMedia ($valor1, $valor2, $valor3, $valor4) {
     return $media; 
 
 }
+
+//funções projeto calculadora
+function operacaoMatematica ($numero1, $numero2, $operacao) {
+
+    //Declaração de variaveis locais da função (todas as variaveis recebem os dados do argumento da function)
+    $num1 = (double) $numero1;
+    $num2 = (double) $numero2;
+    $tipoCalculo = (string) $operacao; 
+    $result = (double) 0;
+
+    //Processamento do calculo das operações com switch case
+    switch ($tipoCalculo) 
+    {
+        case ('SOMAR'):
+            $result = $num1 + $num2;
+            break;
+        case ('SUBTRAIR'):
+            $result = $num1 - $num2;
+            break;
+        case ('MULTIPLICAR'):
+            $result = $num1 * $num2;
+            break;
+        case ('DIVIDIR'):	
+            if($num2 == 0)
+                echo(ERRO_DIVISAO_COM_ZERO);
+            else
+                $result = $num1 / $num2;
+            break;		
+    }
+        //round() - permite ajustar a quantidade de casas decimais realizando o arredondamento
+        $result = round($result,2);
+    
+        return $result;
+
+}
+
+//Função para tabuada
+function multiplicar($numerador, $multiplicador) 
+    {
+
+        //Declaração de variaveis locais da função
+        $numNumerador = (int) $numerador;
+        $numMultiplicador = (int) $multiplicador;
+        $cont = (int) 0;
+        $resultado = (string) null;
+        $resultadoLocal = (int) 0;
+
+        //Craindo looping com while para a realização da tabuada de acordo com os valores solicidadps
+        while ($cont <= $numMultiplicador) {
+            $resultadoLocal = $numNumerador * $cont;
+            $resultado = $resultado . ("$numNumerador X $cont = " . ("$resultadoLocal") . '<br/>');
+            $cont++;   
+        }
+
+        return $resultado;      
+    }
 
 
 ?>

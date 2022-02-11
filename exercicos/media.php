@@ -86,13 +86,13 @@
                             <a href="" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./exercicos/media.php" class="nav-link">Média</a>
+                            <a href="../exercicos/media.php" class="nav-link">Média</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Calculadora</a>
+                            <a href="../exercicos/calculadora.php" class="nav-link">Calculadora</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Tabuada</a>
+                            <a href="../exercicos/tabuada.php" class="nav-link">Tabuada</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Pares e Ímpares</a>
@@ -139,6 +139,7 @@
                     <footer id="resultado">
                         A média é: <?=$media?>
                     </footer>
+                    
                 </div>
         
             
