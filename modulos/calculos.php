@@ -83,5 +83,39 @@ function multiplicar($numerador, $multiplicador)
         return $resultado;      
     }
 
+//Funções projeto par ou impar
+function par ($numeroInical, $numeroFinal) {
+    $numI = (int) $numeroInical;
+    $numF = (int) $numeroFinal;
+    $resultado = (string) null;
+
+    while ($numI <= $numF) {
+        if ($numI % 2 == 0) {
+            $resultado = $resultado . ($numI . '' . '<br/>');
+        }
+        $numI += 1;
+    }
+    return $resultado;
+
+
+}
+
+
+function impar ($numeroInical, $numeroFinal) {
+    $numI = (int) $numeroInical;
+    $numF = (int) $numeroFinal;
+    $resultado = (string) null;
+
+    while ($numI <= $numF) {
+        if ($numI % 2 != 0) {
+            $resultado = $resultado . ($numI . '' . '<br/>');
+        }
+        $numI += 1;
+    }
+    return $resultado;
+
+
+}
+
 
 ?>

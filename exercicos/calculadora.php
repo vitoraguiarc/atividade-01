@@ -53,9 +53,9 @@
 
 <html>
     <head>
-        <title>Calculadora - Simples</title>
-        <link rel="stylesheet" type="text/css" href="../css/style-calculadora.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+       <title>Calculadora - Simples</title>
+       <link rel="stylesheet" type="text/css" href="../css/style-calculadora.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="../style.css">
@@ -84,7 +84,7 @@
                                     <a href="../exercicos/tabuada.php" class="nav-link">Tabuada</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Pares e Ímpares</a>
+                                    <a href="../exercicos/par-impar.php" class="nav-link">Pares e Ímpares</a>
                                 </li>    
                             </ul>
                         </nav>

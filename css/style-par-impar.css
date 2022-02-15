@@ -1,0 +1,32 @@
+#conteudo-par-impar{
+    width: 400px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #000000;
+    text-align: center;
+    position: absolute;
+   
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+#resultado-impar {
+    margin-left: 15px;
+    width: 100px;
+    height: 250px;
+    overflow: auto;
+  
+}
+
+#resultado-par {
+    width: 100px;
+    height: 250px;
+    overflow: auto;
+}

@@ -23,5 +23,10 @@
      const ERRO_MSG_TABUADA_ZERO = '<script>alert("Não existe tabuada do 0")</script>';
      const ERRO_MSG_CARACTER_ENTRADA_TABUADA = '<script>alert("Não é possível realizar a tabuada com dados não numéricos!");</script>';
 
+     //Constantes do projeto par ou impar
+     const ERRO_MSG_INICIAL_MAIOR = '<script>alert("O número inical não pode ser maior que o final")</script>';
+     const ERRO_MSG_INICIAL_IGUAL_FINAL = '<script>alert("O número inical não pode ser igual que o final")</script>';
+     const ERRO_MSG_SELECTED_VAZIA = '<script>alert("Favor selecionar todos os números desejados")</script>';
+
 
 ?>

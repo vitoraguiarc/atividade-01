@@ -95,7 +95,7 @@
                             <a href="../exercicos/tabuada.php" class="nav-link">Tabuada</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Pares e Ímpares</a>
+                            <a href="../exercicos/par-impar.php" class="nav-link">Pares e Ímpares</a>
                         </li>    
                     </ul>
                 </nav>
