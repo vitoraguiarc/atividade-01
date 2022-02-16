@@ -5,6 +5,9 @@
     margin-right: auto;
     border: solid 1px #000000;
     text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
    
 }
 

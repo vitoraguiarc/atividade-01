@@ -94,9 +94,11 @@
                         </div>
                     </div>
                 </form>
-                <footer id="resultado">
-                    <?php echo($resultadoTabuada); ?> 
-                </footer>
+                <div class="resultado"> 
+                        <div id="resultado-tabuada">
+                            <p> <?php echo($resultadoTabuada); ?></p>
+                        </div>         
+                </div>
             </div>
         </div>
     </div>
