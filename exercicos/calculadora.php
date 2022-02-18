@@ -58,65 +58,69 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="../style.css">
        <script src="../hambruger.js" defer></script>
     </head>
         <body>
             <div class="container">
-                        <nav class="navbar">
-                            <div class="hamburger-menu">
-                                <div class="line line-1"></div>
-                                <div class="line line-2"></div>
-                                <div class="line line-3"></div>
-                            </div>
+                <div class="header-calc">
+                    <h1>Calculadora</h1>
+                </div>
+                <nav class="navbar"> 
+                    <div class="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
                             
-                            <ul class="nav-list">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../exercicos/media.php" class="nav-link">Média</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../exercicos/calculadora.php" class="nav-link">Calculadora</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../exercicos/tabuada.php" class="nav-link">Tabuada</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../exercicos/par-impar.php" class="nav-link">Pares e Ímpares</a>
-                                </li>    
-                            </ul>
-                        </nav>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../exercicos/media.php" class="nav-link">Média</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../exercicos/calculadora.php" class="nav-link">Calculadora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../exercicos/tabuada.php" class="nav-link">Tabuada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../exercicos/par-impar.php" class="nav-link">Pares e Ímpares</a>
+                        </li>    
+                    </ul>
+                </nav>
                 
-                        <div id="conteudo">
-                            <div id="titulo">
-                                Calculadora Simples
+                <div id="conteudo">
+                    <div id="titulo">
+                        Calculadora Simples
+                    </div>
+                    <div id="form">
+                        <form name="frmcalculadora" method="post" action="calculadora.php">
+                            Valor 1:<input type="text"  name="txtn1" value="<?=$valor1?>" > <br>
+                            Valor 2:<input type="text" name="txtn2" value="<?=$valor2?>" > <br>
+                            <div id="container_opcoes">
+                                <input type="radio" name="rdocalc" value="somar" class="radio" <?=$opcao == 'SOMAR' ? 'checked' : null; ?>> Somar <br>
+                                <input type="radio" name="rdocalc" value="subtrair" class="radio"<?=$opcao == 'SUBTRAIR' ? 'checked' : null; ?> > Subtrair <br>
+                                <input type="radio" name="rdocalc" value="multiplicar" class="radio"<?=$opcao == 'MULTIPLICAR' ? 'checked' : null; ?> > Multiplicar <br>
+                                <input type="radio" name="rdocalc" value="dividir" class="radio"<?=$opcao == 'DIVIDIR' ? 'checked' : null; ?>> Dividir <br>
                             </div>
-
-                            <div id="form">
-                                <form name="frmcalculadora" method="post" action="calculadora.php">
-                                        Valor 1:<input type="text"  name="txtn1" value="<?=$valor1?>" > <br>
-                                        Valor 2:<input type="text" name="txtn2" value="<?=$valor2?>" > <br>
-                                        <div id="container_opcoes">
-                                            <input type="radio" name="rdocalc" value="somar" <?=$opcao == 'SOMAR' ? 'checked' : null; ?>>Somar <br>
-                                            <input type="radio" name="rdocalc" value="subtrair" <?=$opcao == 'SUBTRAIR' ? 'checked' : null; ?> >Subtrair <br>
-                                            <input type="radio" name="rdocalc" value="multiplicar" <?=$opcao == 'MULTIPLICAR' ? 'checked' : null; ?> >Multiplicar <br>
-                                            <input type="radio" name="rdocalc" value="dividir" <?=$opcao == 'DIVIDIR' ? 'checked' : null; ?>>Dividir <br>
-                                            
-                                            <input type="submit" name="btncalc" value ="Calcular" >
-                                            
-                                        </div>	
-                                        <div id="resultado">
-                                            <?=$resultado?>
-                                        </div>
-                                        
-                                    </form>
-                            </div>
+                            <div class="botao">
+                                <input type="submit" name="btncalc" value ="Calcular" class="btnCalc" >
+                            </div>                    	
+                            <div id="resultado">
+                                <p><?=$resultado?></p>
+                            </div>                
+                        </form>
+                    </div>
                             
-                        </div>  
+                </div>  
 
-                </div>      
+            </div>      
                 
             
         </body>

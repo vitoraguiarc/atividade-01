@@ -1,12 +1,12 @@
 #conteudo{
     width: 400px;
-    height: 300px;
+    height: 250px;
     margin-left: auto;
     margin-right: auto;
-    border: solid 1px #000000;
+    border: solid 1px #262626;
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%); 
    
 }
@@ -14,21 +14,20 @@
 #titulo{
     width: inherit;
     height: 80px;
-    background-color: #000000;
+    background-color: #262626;
     color: #ffffff;
     box-sizing: border-box;
     padding-top: 25px;
-    font-size: 26px;
-    font-family: verdana;
-    word-spacing: 5px;
-    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #form{
     width: inherit;
-    height: 185px;
+    height: 100%;
     padding-top: 20px;
     box-sizing: border-box;
+    background:  #ffffff;
 }
 
 input{
@@ -37,15 +36,14 @@ input{
 }
 
 #resultado{
-    width: 200px;
-    height: 110px;
-    background-color: cornflowerblue;
+    width: 100px;
+    height: 55px;
     box-sizing: border-box;
-    padding-top: 2px;
-    font-family: cursive;
+    padding-top: 5px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    float: left;
+    margin-left: 260px;
+    margin-top: 30px;
 }
 
 #container_opcoes{
@@ -54,3 +52,42 @@ input{
     float: left;
     text-align: left;
 }
+
+.header-calc {
+    background: #262626;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-calc h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+} 
+
+#container_opcoes{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #262626;
+}
+
+.btnCalc {
+    width: 100px;
+    height: 25px;
+    background: firebrick;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    gap: 30px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    right: 20%;
+} 

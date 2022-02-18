@@ -56,6 +56,9 @@
 <body>      
 
     <div class="container">
+        <div class="header-par-impar">
+            <h1>Pares e Ímpares</h1>
+        </div>
         <nav class="navbar">
             <div class="hamburger-menu">
                 <div class="line line-1"></div>
@@ -64,7 +67,7 @@
             </div>       
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="" class="nav-link">Home</a>
+                    <a href="../index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="../exercicos/media.php" class="nav-link">Média</a>
@@ -85,10 +88,10 @@
             <header id="titulo">
                 Calculo de Médias
             </header>
-            <div id="form"></div>
+            <div id="form">
                 <form name="frmImparPar" action="par-impar.php" method="post">
                     <div class="container-select">
-                        <label>Nº inicial:</label>
+                        <label class="label-par-impar">Nº inicial:</label>
                         <select name="inicial" class="select-impar-par">
                         <option value="">Por favor selecione um número</option>
                         <?php
@@ -101,9 +104,9 @@
                         </select>
                     </div>
                     <div class="container-select">
-                        <label>Nº final:</label>
-                        <select name="final" class="select-impar-par">
-                        <option value="">Por favor selecione um número</option>
+                        <label class="label-par-impar">Nº final:</label>
+                        <select name="final" class="select-impar-par" >
+                        <option value="" class="label-par-impar">Por favor selecione um número</option>
                         <?php
                                 $final = 100;
                                 while ($final <= 1000) {
@@ -112,18 +115,23 @@
                                 }
                         ?> 
                         </select>
-                        <input type="submit" name="btncalc" value ="Calcular" >
+                        <div class="botoes">
+                            <input type="submit" name="btncalc" value ="Calcular" class="btnCalc"  >
+                        
                         <a href="par-impar.php">
-                            <input type="submit" name="reset" value="Novo Cálculo">
+                            <input type="submit" name="reset" value="Novo Cálculo" class="btnCalc">
                         </a>    
+                        
+                        </div>   
+                        
                     </div>
                     <div class="resultado"> 
                         <div id="resultado-par">
-                            <p>Resultado Pares</p><?= $resultadoPar; ?>
+                            <p class="resultado-label">Resultado Pares</p class="resultado-par-impar"><?= $resultadoPar; ?>
                         </div>  
                         <div id="resultado-impar">
-                            <p>Resultado Ímpares</p><?= $resultadoImpar; ?>
-                        </div>
+                            <p class="resultado-label">Resultado Ímpares</p class="resultado-par-impar"><?= $resultadoImpar; ?>
+                    </div>
                     </div>
                 </form>
         <div>

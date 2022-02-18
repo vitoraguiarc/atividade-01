@@ -6,9 +6,69 @@
     border: solid 1px #000000;
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%); 
    
+}
+
+.header-par-impar {
+    background: #262626;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-par-impar h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+#titulo{
+    width: inherit;
+    height: 80px;
+    background-color: #262626;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#form{
+    width: inherit;
+    height: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-select {
+    padding: 10px;
+}
+
+.botoes {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnCalc {
+    width: 100px;
+    height: 25px;
+    background: firebrick;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+.label-par-impar {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
 }
 
 .resultado {
@@ -32,3 +92,9 @@
     height: 250px;
     overflow: auto;
 }
+
+.resultado-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-style: oblique;
+} 

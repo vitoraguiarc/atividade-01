@@ -1,0 +1,58 @@
+.header-menu {
+    background: #262626;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.main-menu {
+    width: 980px;
+    height: 510px;
+    background: #262626;
+    margin-top: 75px;
+    margin-left: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+}
+
+.filho-main {
+    width: 320px;
+    height: 220px;
+    background: #015227;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.titulo-filho {
+    width: 300px;
+    height: 40px;
+    background: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-filho p {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.imagem-filho {
+    width: 220px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

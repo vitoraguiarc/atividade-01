@@ -45,12 +45,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <script src="../hambruger.js" defer></script>
     <title>Tabuada</title>
 </head>
 <body>
     <div class="container">
+        <div class="header-tabuada">
+            <h1>Tabuada</h1>
+        </div>
         <nav class="navbar">
             <div class="hamburger-menu">
                 <div class="line line-1"></div>
@@ -59,7 +65,7 @@
             </div>         
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="" class="nav-link">Home</a>
+                    <a href="../index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="../exercicos/media.php" class="nav-link">Média</a>
@@ -85,11 +91,11 @@
                         Tabuada: <input type="text" name="txtn1" value="<?=($valorTabuada)?>"> <br>
                         Contador: <input type="text" name="txtn2" value="<?=($valorContador)?>"> <br>
                     </div>
-                    <div>
-                        <input type="submit" name="btncalc" value ="Calcular" >
-                        <div id="botaoReset">
+                    <div class="botoes">
+                        <input type="submit" name="btncalc" value ="Calcular" class="botaoTabuada">
+                        <div id="botaoReset" >
                             <a href="tabuada.php">
-                                <input type="submit" name="reset" value="Novo Cálculo">
+                                <input type="submit" name="reset" value="Novo Cálculo" class="botaoTabuada">
                             </a>    
                         </div>
                     </div>

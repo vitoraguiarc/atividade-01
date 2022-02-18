@@ -67,6 +67,9 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="../style.css">
        <script src="../hambruger.js" defer></script>
        <meta charset="utf-8">
@@ -74,6 +77,9 @@
         <body>
     
             <div class="container">
+                <div class="header-media">
+                    <h1>Calculo de Médias</h1>
+                </div>
                 <nav class="navbar">
                     <div class="hamburger-menu">
                         <div class="line line-1"></div>
@@ -83,7 +89,7 @@
                     
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Home</a>
+                            <a href="../index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="../exercicos/media.php" class="nav-link">Média</a>
@@ -98,6 +104,7 @@
                             <a href="../exercicos/par-impar.php" class="nav-link">Pares e Ímpares</a>
                         </li>    
                     </ul>
+                    
                 </nav>
                 <div id="conteudo">
                     <header id="titulo">
@@ -124,21 +131,19 @@
                                 <label>Nota 4:</label>
                                 <input type="text" name="txtn4" value="<?=($nota4)?>" >
                             </div>
-                            <div>
-                                <input type="submit" name="btncalc" value ="Calcular" >
+                            <div class="botoes">
+                                <input type="submit" name="btncalc" value ="Calcular" class="btnCalc" >
                                 <div id="botaoReset">
-                                    <a href="media.php">
-                                        Novo Cálculo
-                                    </a>    
+                                    <input type="submit" name="reset" value="Novo Cálculo" class="btnCalc">
                                 </div>
                             </div>
                         </form>
 
                     </div>
 
-                    <footer id="resultado">
-                        A média é: <?=$media?>
-                    </footer>
+                    <div id="resultado">
+                        <p>A média é: <?=$media?></p>  
+                    </div>
                     
                 </div>
         
