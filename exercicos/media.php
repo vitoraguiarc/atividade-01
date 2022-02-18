@@ -63,7 +63,7 @@
     
             <div class="container">
                 <div class="header-media">
-                    <h1>Calculo de Médias</h1>
+                    <h1>Calculo de Média</h1>
                 </div>
                 <nav class="navbar">
                     <div class="hamburger-menu">
@@ -93,7 +93,7 @@
                 </nav>
                 <div id="conteudo">
                     <header id="titulo">
-                        Calculo de Médias
+                        Calculo de Média
                     </header>
                     <div id="form">
                         <form name="frmMedia" method="post" action="media.php">

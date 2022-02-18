@@ -30,8 +30,8 @@
                 {
                     echo (ERRO_MSG_SELECTED_VAZIA);
                 } else {
-                        $resultadoPar = par($valorInicial, $valorFinal);
-                        $resultadoImpar = impar($valorInicial, $valorFinal);
+                        $resultadoPar = classificaNum($valorInicial, $valorFinal);
+                        $resultadoImpar = classificaNum($valorInicial, $valorFinal);
                        }
                 }
             
@@ -87,7 +87,7 @@
     
         <div id="conteudo-par-impar">
             <header id="titulo">
-                Calculo de Médias
+                Pares ou Ímpares
             </header>
             <div id="form">
                 <form name="frmImparPar" action="par-impar.php" method="post">
@@ -128,11 +128,19 @@
                     </div>
                     <div class="resultado"> 
                         <div id="resultado-par">
-                            <p class="resultado-label">Resultado Pares</p class="resultado-par-impar"><?= $resultadoPar; ?>
+                            <p class="resultado-label">Resultado Pares</p class="resultado-par-impar"><?= $resultadoPar['par']; ?>
                         </div>  
                         <div id="resultado-impar">
-                            <p class="resultado-label">Resultado Ímpares</p class="resultado-par-impar"><?= $resultadoImpar; ?>
+                            <p class="resultado-label">Resultado Ímpares</p class="resultado-par-impar"><?= $resultadoImpar['impar']; ?>
+                        </div>
                     </div>
+                    <div class="qntd">
+                        <span class="qntd-par"> 
+                            <p class="label-resultado-parImpar">Qtde de Pares</p>
+                        </span>
+                        <span class="qntd-impar"> 
+                            <p class="label-resultado-parImpar">Qtde de Ímpares</p>
+                        </span>
                     </div>
                 </form>
         <div>

@@ -91,6 +91,8 @@
     width: 100px;
     height: 250px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .resultado-label {
@@ -98,3 +100,21 @@
     font-size: 1rem;
     font-style: oblique;
 } 
+
+.qntd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    
+}
+
+.qntd-par {
+    margin-right: 30px;
+    text-align: center;
+}
+
+.label-resultado-parImpar {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}

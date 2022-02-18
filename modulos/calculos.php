@@ -118,5 +118,27 @@ function impar ($numeroInical, $numeroFinal) {
 
 }
 
+function classificaNum ($numeroInical, $numeroFinal) {
+    $numeros = array(
+        'par' => array (
+
+        ),
+        'impar' => array (
+
+        )
+    );
+    $range = range($numeroInical, $numeroFinal);
+    foreach ($range as $numero) {
+        if ($numero % 2 != 0) {
+            array_push ($numeros['impar'], $numero.'<br>');
+        } else {
+            array_push ($numeros['par'], $numero.'<br>');
+        }
+    }
+    return $numeros;
+}
+
+
+
 
 ?>
