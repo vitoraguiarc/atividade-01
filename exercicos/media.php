@@ -6,7 +6,6 @@
     //import arquivo função media
     require_once('../modulos/calculos.php');
 
-    
     //Declaração de variavél nomeVar = (tipoDados) valorInical;
     $nota1 = (double) 0;
     $nota2 = (double) 0;
@@ -23,20 +22,6 @@
         $nota3 = $_POST ["txtn3"];
         $nota4 = $_POST ["txtn4"];
      
-            //Operadores Lógicos
-                //OU - or, ||
-                //E - and, &
-                //Negação, !
-
-            /*  is_numeric() - permite validar se o conteúdo é um número
-                is_string() - permite validar se o conteúdo é uma string
-                is_integer() - permite validar se o conteúdo é um inteiro
-                is_double() ou is_float() - permite validar se o conteúdo é um número quebrado
-                is_array() - permite validar se o conteúdo é um vetor ou uma matriz
-                is_bool() - permite validar se o conteúdo é um booleano
-                ... e outras opções de validação
-            */
-
             //Tratamento de erro para validação de caixa vazia
             if($_POST["txtn1"] == "" || $_POST["txtn2"] == "" || $_POST["txtn3"] == "" || $_POST["txtn4"] == "")
             {

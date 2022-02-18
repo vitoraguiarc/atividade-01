@@ -19,6 +19,7 @@
         $valorInicial = $_POST ["inicial"];
         $valorFinal = $_POST ["final"];
 
+        //Validações se inical e maior ou igual ou nulo
         if ($valorInicial > $valorFinal) 
             echo (ERRO_MSG_INICIAL_MAIOR);
         else {

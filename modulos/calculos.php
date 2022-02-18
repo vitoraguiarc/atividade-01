@@ -73,7 +73,7 @@ function multiplicar($numerador, $multiplicador)
         $resultado = (string) null;
         $resultadoLocal = (int) 0;
 
-        //Craindo looping com while para a realização da tabuada de acordo com os valores solicidadps
+        //Criando looping com while para a realização da tabuada de acordo com os valores solicidadps
         while ($cont <= $numMultiplicador) {
             $resultadoLocal = $numNumerador * $cont;
             $resultado = $resultado . ("$numNumerador X $cont = " . ("$resultadoLocal") . '<br/>');
@@ -84,6 +84,7 @@ function multiplicar($numerador, $multiplicador)
     }
 
 //Funções projeto par ou impar
+//Função par
 function par ($numeroInical, $numeroFinal) {
     $numI = (int) $numeroInical;
     $numF = (int) $numeroFinal;
@@ -100,7 +101,7 @@ function par ($numeroInical, $numeroFinal) {
 
 }
 
-
+//Função impar
 function impar ($numeroInical, $numeroFinal) {
     $numI = (int) $numeroInical;
     $numF = (int) $numeroFinal;

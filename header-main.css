@@ -15,8 +15,8 @@
     width: 980px;
     height: 510px;
     background: #262626;
-    margin-top: 75px;
-    margin-left: 85px;
+    margin-top: 10%;
+    margin-left: 25%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
