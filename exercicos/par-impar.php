@@ -10,9 +10,10 @@
     //Declaração de variaveis
     $valorInicial = (int) 0;
     $valorFinal = (int) 0;
-    $resultadoImpar = (string) null;
-    $resultadoPar = (string) null;
-
+    $resultadoImpar = (array)
+    $resultadoPar = (array)
+    $qtdePares = (int) 0;
+    $qtdeImpares = (int) 0;
 
     //Validação de campos (click botão, inical maior que final e etc...)
     if (isset($_POST["btncalc"])) {
@@ -30,8 +31,10 @@
                 {
                     echo (ERRO_MSG_SELECTED_VAZIA);
                 } else {
-                        $resultadoPar = classificaNum($valorInicial, $valorFinal);
-                        $resultadoImpar = classificaNum($valorInicial, $valorFinal);
+                        $resultadoPar = numerosPares($valorInicial, $valorFinal); 
+                        $resultadoImpar = numerosImpares($valorInicial, $valorFinal);
+                        $qtdePares = count($resultadoPar);
+                        $qtdeImpares = count($resultadoImpar);
                        }
                 }
             
@@ -128,18 +131,18 @@
                     </div>
                     <div class="resultado"> 
                         <div id="resultado-par">
-                            <p class="resultado-label">Resultado Pares</p class="resultado-par-impar"><?= $resultadoPar['par']; ?>
+                            <p class="resultado-label">Resultado Pares</p><?= $arrayPar = implode('',$resultadoPar);?>
                         </div>  
                         <div id="resultado-impar">
-                            <p class="resultado-label">Resultado Ímpares</p class="resultado-par-impar"><?= $resultadoImpar['impar']; ?>
+                            <p class="resultado-label">Resultado Ímpares</p><?= $arrayImpar = implode('', $resultadoImpar);?>
                         </div>
                     </div>
                     <div class="qntd">
                         <span class="qntd-par"> 
-                            <p class="label-resultado-parImpar">Qtde de Pares</p>
+                            <p class="label-resultado-parImpar">Qtde Pares</p><?=$qtdePares?>
                         </span>
                         <span class="qntd-impar"> 
-                            <p class="label-resultado-parImpar">Qtde de Ímpares</p>
+                            <p class="label-resultado-parImpar">Qtde Ímpares</p><?=$qtdeImpares?>
                         </span>
                     </div>
                 </form>

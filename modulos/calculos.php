@@ -84,60 +84,75 @@ function multiplicar($numerador, $multiplicador)
     }
 
 //Funções projeto par ou impar
-//Função par
-function par ($numeroInical, $numeroFinal) {
-    $numI = (int) $numeroInical;
-    $numF = (int) $numeroFinal;
-    $resultado = (string) null;
+//função para separar um sequencia de números pares
+function numerosPares ($numeroInicial, $numeroFinal) {
 
-    while ($numI <= $numF) {
-        if ($numI % 2 == 0) {
-            $resultado = $resultado . ($numI . '' . '<br/>');
-        }
-        $numI += 1;
-    }
-    return $resultado;
+    //recebe os dados de argumento da função
+   $numInicial = (int) $numeroInicial;
+   $numFinal = (int) $numeroFinal;
+   $pares = array();
+   $cont = (int) 0;
 
 
+   while ($numInicial <= $numFinal) {
+       
+       if($numInicial %2 == 0){ 
+           $pares [$cont] = $numInicial.'<br>';
+           $cont++;
+       }
+       $numInicial++;
+   }
+       return $pares;
 }
 
-//Função impar
-function impar ($numeroInical, $numeroFinal) {
-    $numI = (int) $numeroInical;
-    $numF = (int) $numeroFinal;
-    $resultado = (string) null;
+//função para separar um sequencia de números pares
+function numerosImpares ($numeroInicial, $numeroFinal) {
 
-    while ($numI <= $numF) {
-        if ($numI % 2 != 0) {
-            $resultado = $resultado . ($numI . '' . '<br/>');
-        }
-        $numI += 1;
-    }
-    return $resultado;
+   //recebe os dados de argumento da função
+  $numInicial = (int) $numeroInicial;
+  $numFinal = (int) $numeroFinal;
+  $impares = array();
+  $cont = (int) 0;
+  $result = (string) null;
 
 
+  while ($numInicial <= $numFinal) {
+      
+      if($numInicial %2 == 1){ 
+          $impares [$cont] = $numInicial.'<br>';
+          $cont++;
+      }
+      $numInicial++;
+  }   
+      return $impares;
 }
 
-function classificaNum ($numeroInical, $numeroFinal) {
-    $numeros = array(
-        'par' => array (
 
-        ),
-        'impar' => array (
+function numerosParesImpares ($numeroInicial, $numeroFinal) {
+   
+   //Recebe os dados dos argumentos da função
+   $numInicial = (int) $numeroInicial;
+   $numFinal = (int) $numeroFinal;
 
-        )
-    );
-    $range = range($numeroInical, $numeroFinal);
-    foreach ($range as $numero) {
-        if ($numero % 2 != 0) {
-            array_push ($numeros['impar'], $numero.'<br>');
-        } else {
-            array_push ($numeros['par'], $numero.'<br>');
-        }
-    }
-    return $numeros;
+   //Variaveis para a criação dos arrays individuais (pares e impares)
+   $pares = array();
+   $impares = array();
+
+   //Chama as funções que separam números pares e impares
+   //Refatoramento de codigo, chamando a função numerosPares e numerosImpares e atribuindo elas
+   $pares = numerosPares($numInicial, $numFinal);
+   $impares = numerosImpares($numInicial, $numFinal);
+   
+   //Criação de um array para armazenamento os dois array individuais (pares e impares)
+   //Criação de uma chave dentro de um array chamada "Pares" para identificar a lista dos pares e "Impares" para identificar a lista dos impares
+   $paresImpares = array(
+       "Pares"    =>  $pares,
+       "Impares"  => $impares
+   );
+
+   return $paresImpares;
+
 }
-
 
 
 
